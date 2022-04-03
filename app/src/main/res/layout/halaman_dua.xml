@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f08080">
+
+    <!-- pada TextView berikut berisi text "Pegawai", dengan id "textSapaan",
+         lebar layoutnya "322dp", tingginya "45dp", text tersebut juga menggunakan
+         warna hitam atau dengan kode #000, ukurannya "22sp" dengan style "bold"
+         atau tebal.-->
+    <TextView
+        android:id="@+id/teksSapaan"
+        android:layout_width="322dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/pegawai"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- pada TextView berikut berisi text "Selamat Datang di Flower Collection",
+         dengan id "textWelcome", lebar dan tinggi layoutnya menyesuaikan konten,
+         text tersebut juga menggunakan warna hitam atau dengan kode #000, ukurannya
+         "22sp" dengan style "bold" atau tebal.-->
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/selamat_datang_di_flower_collection"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teksSapaan"
+        tools:ignore="MissingConstraints" />
+
+    <!-- pada ImageView berikut berisi gambar dengan id "btnIg"
+         lebar layoutnya "54dp" dan tingginya "50dp".-->
+    <ImageView
+        android:id="@+id/btnIg"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="11dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texticon"
+        app:srcCompat="@drawable/logoinstagram"
+        tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck" />
+
+    <!-- pada ImageView berikut berisi gambar dengan id "imagebunga2"
+         lebar layoutnya "147dp" dan tingginya "96dp".-->
+    <ImageView
+        android:id="@+id/imagebunga2"
+        android:layout_width="147dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="44dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagebunga1"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome"
+        app:srcCompat="@drawable/bungamelati"
+        tools:ignore="ContentDescription" />
+
+    <!-- pada ImageView berikut berisi gambar dengan id "imagebunga3"
+         lebar layoutnya "150dp" dan tingginya "100dp".-->
+    <ImageView
+        android:id="@+id/imagebung3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toStartOf="@+id/imagebunga4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebunga1"
+        app:srcCompat="@drawable/bungamawar"
+        tools:ignore="ContentDescription" />
+
+    <!-- pada ImageView berikut berisi gambar dengan id "imagebunga4"
+         lebar layoutnya "145dp" dan tingginya "97dp".-->
+    <ImageView
+        android:id="@+id/imagebunga4"
+        android:layout_width="145dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagebung3"
+        app:layout_constraintTop_toBottomOf="@+id/imagebunga2"
+        app:srcCompat="@drawable/bungadaisy"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <!-- pada ImageView berikut berisi gambar dengan id "imagebunga5"
+         lebar layoutnya "151dp" dan tingginya "100dp".-->
+    <ImageView
+        android:id="@+id/imagebunga5"
+        android:layout_width="151dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imagebunga6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebung3"
+        app:srcCompat="@drawable/bungamerah"
+        tools:ignore="ContentDescription" />
+
+    <!-- pada ImageView berikut berisi gambar dengan id "imagebunga6"
+         lebar layoutnya "147dp" dan tingginya "99dp".-->
+    <ImageView
+        android:id="@+id/imagebunga6"
+        android:layout_width="147dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagebunga5"
+        app:layout_constraintTop_toBottomOf="@+id/imagebunga4"
+        app:srcCompat="@drawable/bungatulip"
+        tools:ignore="ContentDescription" />
+
+    <!-- pada ImageView berikut berisi gambar dengan id "imagebunga1"
+         lebar layoutnya "148dp" dan tingginya "98dp".-->
+    <ImageView
+        android:id="@+id/imagebunga1"
+        android:layout_width="148dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toStartOf="@+id/imagebunga2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome"
+        app:srcCompat="@drawable/bungaungu"
+        tools:ignore="ContentDescription" />
+
+    <!-- berikut adalah beberapa constraintLayout yang digunakan ada yang orientationnya
+         vertical dan horizontal.-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <!-- pada TextView berikut berisi text "Klik icon di bawah untuk mengikuti sosmed kami",
+         dengan id "texticon", lebar dan tinggi layoutnya disesuaikan dengan konten, text
+         tersebut juga menggunakan warna hitam atau dengan kode #000, ukurannya "15sp" dengan
+         style "bold" atau tebal.-->
+    <TextView
+        android:id="@+id/texticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/klik_icon_di_bawah_untuk_mengikuti_sosmed_kami"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebunga6"
+        tools:ignore="MissingConstraints" />
+
+    <!-- pada ImageView berikut berisi gambar dengan id "btnFb"
+         lebar layoutnya "51dp" dan tingginya "45dp".-->
+    <ImageView
+        android:id="@+id/btnFb"
+        android:layout_width="51dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toEndOf="@+id/btnIg"
+        app:layout_constraintTop_toBottomOf="@+id/texticon"
+        app:srcCompat="@drawable/iconfacebook"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f08080"
+    tools:context=".MainActivity">
+
+
+    <!-- pada LinearLayout digunakan untuk membuat beberapa komponen
+         seperti TextView, EditText, Button dan lain-lain di dalam
+         LinearLayout menjadi sejajar, bisa horizontal maupun vertikal
+         dengan android:orientation.
+         disini LinearLayout diberi id dengan nama "LinearLayout"
+         yang lebar layoutnya "327dp", tingginya "407dp"
+         warna backgroundnya #ffff atau warna putih
+         menggunakan orientation vertical
+         jaraknya dengan garis dalam(padding) diatur "15dp".-->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="327dp"
+        android:layout_height="407dp"
+        android:background="#ffff"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textflower"
+        tools:ignore="MissingConstraints">
+
+        <!-- pada TextView berikut berisi text "LOGIN PEGAWAI", dengan
+             id "textLogin", menggunakan layout-gravity:center_horizontal
+             atau text berada di posisi tengah secara horizontal. textnya
+             menggunakan rata kanan tengah atau center.
+             text tersebut juga menggunakan warna hitam atau dengan kode
+             #000, ukurannya "25sp" dengan style "bold" atau tebal.-->
+        <TextView
+            android:id="@+id/textLogin"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="110dp"
+            android:text="@string/login_pegawai"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="282dp" />
+
+        <!-- pada TextView berikut berisi text "Username", dengan id
+             "textNama".-->
+        <TextView
+            android:id="@+id/textNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/username" />
+
+        <!-- pada EditText berikut berfungsi sebagai wadah user untuk memasukkan
+             text dengan type input textPersonName lalu inputan tersebut nantinya akan di
+             kirimkan ke MainActivity.kt. idnya "editNama".-->
+        <EditText
+            android:id="@+id/editNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        <!-- pada TextView berikut berisi text "Password", dengan id
+             "textPass".-->
+        <TextView
+            android:id="@+id/textPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password" />
+
+        <!-- pada EditText berikut berfungsi sebagai wadah user untuk memasukkan
+             text dengan type input numberPassword yang ketika mengisikan password
+             akan berubah menjadi bulat kecil hitam, lalu inputan tersebut nantinya
+             akan di kirimkan ke MainActivity.kt. idnya "editPass".-->
+        <EditText
+            android:id="@+id/editPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:inputType="numberPassword"
+            android:minHeight="48dp"
+            tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+        <!-- pada Button tersebut digunakan untuk berpindah ke halaman selanjutnya
+             serta mengirimkan username dan password dari EditText. nama buttonnya
+             "LOGIN" dengan id "btnLogin"-->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login" />
+
+    </LinearLayout>
+
+    <!-- pada TextView berikut berisi text "Flower Collection", dengan
+         id "textflower", textnya disesuaikan dengan isi konten atau
+         dengan wrap_content. text tersebut juga menggunakan warna
+         hitam atau dengan kode #000, ukurannya "30sp" dengan style
+         "bold" atau tebal.-->
+    <TextView
+        android:id="@+id/textflower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/flower_collection"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- pada ImageView berikut berisi gambar dengan id "imageView"
+         lebar layoutnya "153dp" dan tingginya "161dp".-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="153dp"
+        android:layout_height="161dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textflower"
+        app:layout_constraintVertical_bias="0.031"
+        app:srcCompat="@drawable/login"
+        tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

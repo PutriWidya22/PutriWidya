@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Login Intent</string>
+    <string name="flower_collection">Flower Collection</string>
+    <string name="login_pegawai">LOGIN PEGAWAI</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="todo">TODO</string>
+    <string name="pegawai">Pegawai</string>
+    <string name="selamat_datang_di_flower_collection">Selamat datang di Flower Collection</string>
+    <string name="follow_sosial_media_kami">Follow Sosial Media Kami :</string>
+    <string name="klik_icon_di_bawah_untuk_mengikuti_sosmed_kami">Klik icon di bawah untuk mengikuti sosmed kami</string>
+
+</resources>
